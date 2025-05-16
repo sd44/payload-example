@@ -1,0 +1,21 @@
+* TODO resend 需要私有域名才能发送邮件
+https://resend.com/domains
+
+* DONE payloadcms website template 是否已内置 seed 命令
+CLOSED: [2025-05-08 四 15:12]
+
+如无的话，仿照https://payloadcms.com/docs/configuration/overview#custom-bin-scripts 加入 seed 命令
+
+payloadcms 没有高度抽象的 seed 系统，非常繁琐。放弃，直接使用数据库导入导出。
+
+* TODO theme 切换不起作用
+
+[[file:src/providers/HeaderTheme/index.tsx]]
+
+* DONE shadcn v4.0 新版已去除 ButtonProps
+CLOSED: [2025-05-10 六 23:53]
+考虑在 d.ts 等处引出 ButtonProps，不破坏 shadcn 原始源代码。
+
+https://github.com/nodejs/corepack/issues/612#issuecomment-2629911771
+
+* TODO 无特殊情况，index 不能做 map id 键位

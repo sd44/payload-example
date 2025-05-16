@@ -1,0 +1,12 @@
+* PayloadCMS 演示示例——丽心心理咨询中心
+
+演示站点： https://lixin6.com ，基于 [[https://payloadcms.com/][PayloadCMS@3.38.0]] 及其[[https://github.com/payloadcms/payload/tree/main/templates/website][Website模板@20250516]]
+
+* 所做修改
++ 更新至 ~TailwindCSS V4.1~ 及 ~Shadcn@latest~ ,添加 shadcn组件命令示例：~pnpm ui add button~
++ 单一中文 i18n 和 locale, ~tailwindcss/typograph~ 中文板式（见[[file:src/app/(frontend)/globals.css][globals.css]] ）
++ 根据 [[https://github.com/rpuls/payload-3-boilerplate][payload-3-boilerplate]] 添加极简文章注释 ~Comments~
++ 自添加 PayloadCMS block 可搜索代码 ~Wenjuan~
++ ~graphql~ + ~tanstack react query~ 使用示例可见 [[file:src/graphql/queryGql.tsx][queryGql.tsx]]
++ *注意：* 没有使用 官方 website 的主页模板，而是自建一个 ~HomeSections~ block，详情见演示主页。
++ *注意：* 为便于在多台机器开发，我将public/media并入了git目录树，但其应为gitignore
